@@ -1,0 +1,170 @@
+/* Root Variables */
+:root {
+    --bg-color: #E9E9E9;
+    --accent-gray: #D6D7D6;
+    --red: #FF3F3C;
+    --text-color: #424242;
+    --font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    text-align: left;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+.hero {
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 10rem;
+    font-weight: 1000;
+    text-transform: uppercase;
+    line-height: 0.85;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    display: block;
+}
+
+.hero img {
+    margin-bottom: -10px;
+}
+
+.description {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+h2 {
+    font-size: 5rem;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 30px;
+}
+
+p {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    font-family: var(--font-family);
+    font-size: 1.9rem;
+    line-height: 1.5;
+}
+
+.features {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+}
+
+.features ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.features li {
+    font-size: 1.9rem;
+    margin-bottom: 15px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.features li i {
+    font-size: 40px;
+    color: var(--text-color);
+}
+
+.newsletter {
+    margin-top: 50px;
+    padding: 30px;
+    padding-bottom: 100px;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    max-width: 600px;
+    margin: auto;
+    background: var(--accent-gray);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.newsletter input {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.newsletter button {
+    background: var(--red);
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.newsletter button:hover {
+    background: #cc332f;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 6rem;
+    }
+
+    .hero img {
+        max-width: 300px;
+    }
+
+    .description {
+        margin-top: -10px;
+    }
+
+    p {
+        max-width: 90%;
+        font-size: 1rem;
+    }
+
+    .newsletter form {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .newsletter input {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+    .newsletter button {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+}

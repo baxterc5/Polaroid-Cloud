@@ -1,0 +1,11 @@
+{
+    "title": "Polaroid Cloud",
+    "theme": {
+      "bgColor": "#E9E9E9",
+      "accentGray": "#D6D7D6",
+      "red": "#FF3F3C",
+      "textColor": "#424242",
+      "font": "Inter, sans-serif"
+    }
+  }
+  
